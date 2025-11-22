@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW's Data Portfolio</title>
+    <style>
+        /* 1. 전체적인 스타일 설정 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* 2. 헤더(제목) 디자인 */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin-top: 10px; font-size: 1.2rem; opacity: 0.8; }
+
+        /* 3. 메인 컨텐츠 영역 */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* 4. 프로젝트 목록을 카드 형태로 정렬 */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* 5. 개별 프로젝트 카드 디자인 */
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px); /* 마우스 올리면 살짝 떠오름 */
+        }
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .project-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .btn:hover { background-color: #2980b9; }
+
+        /* 모바일 화면 대응 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JW's Data Science Portfolio</h1>
+        <p>파이썬 데이터 분석 및 시각화 작업물 저장소</p>
+    </header>
+
+    <div class="container">
+        <h2>📂 Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-title">첫 번째 분석 프로젝트</div>
+                <p class="project-desc">
+                    이곳에 프로젝트에 대한 간단한 설명을 적으세요. 
+                    예: 서울시 지하철 승하차 인원 분석 데이터입니다.
+                </p>
+                <a href="projects/project1.html" class="btn">결과물 보기 &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">두 번째 머신러닝 모델</div>
+                <p class="project-desc">
+                    타이타닉 생존자 예측 모델링 작업입니다. 
+                    Scikit-learn을 사용하여 분류 모델을 만들었습니다.
+                </p>
+                <a href="projects/project2.html" class="btn">결과물 보기 &rarr;</a>
+            </div>
+
+            </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; margin-top: 40px; color: #888;">
+        &copy; 2025 JW Choi. Hosted on GitHub Pages.
+    </footer>
+
+</body>
+</html>
